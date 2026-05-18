@@ -1399,6 +1399,29 @@
       });
     </script>
     <script>
+      // Populate song durations in the playlist
+      window.addEventListener('load', function() {
+        var songs = Amplitude.getSongs();
+        var songEls = document.querySelectorAll('#amplitude-right .song');
+        songEls.forEach(function(songEl, index) {
+          if (index >= songs.length) return;
+          var audio = new Audio();
+          audio.preload = 'metadata';
+          audio.src = songs[index].url;
+          audio.addEventListener('loadedmetadata', function() {
+            var mins = Math.floor(audio.duration / 60);
+            var secs = Math.floor(audio.duration % 60);
+            var durationEl = songEl.querySelector('.song-duration');
+            if (durationEl) {
+              durationEl.textContent = mins + ':' + (secs < 10 ? '0' : '') + secs;
+            }
+            audio = null;
+          });
+        });
+      });
+    </script>
+
+    <script>
 
       function getOffSet(){
         var _offset = 450;
