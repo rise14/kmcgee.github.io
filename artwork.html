@@ -11,6 +11,40 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Lightbox */
+      #tm-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.88);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        cursor: zoom-out;
+      }
+      #tm-lightbox.active { display: flex; }
+      #tm-lightbox img {
+        max-width: 90vw;
+        max-height: 90vh;
+        box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+        cursor: default;
+        border-radius: 2px;
+      }
+      #tm-lightbox-close {
+        position: fixed;
+        top: 18px;
+        right: 26px;
+        color: #fff;
+        font-size: 2.2rem;
+        line-height: 1;
+        cursor: pointer;
+        user-select: none;
+        opacity: 0.8;
+      }
+      #tm-lightbox-close:hover { opacity: 1; }
+      .tg td img { cursor: zoom-in; }
+    </style>
   </head>
 
   <body>    
@@ -175,6 +209,12 @@
 
     </section>
     
+    <!-- Lightbox -->
+    <div id="tm-lightbox">
+      <span id="tm-lightbox-close">&times;</span>
+      <img id="tm-lightbox-img" src="" alt="">
+    </div>
+
     <script src="js/jquery-1.9.1.min.js"></script>     
     <script src="slick/slick.min.js"></script>
     <script src="js/easing.min.js"></script>
@@ -315,6 +355,19 @@
               }                 
             }
           ]
+        });
+
+        // Lightbox
+        var $lightbox = $('#tm-lightbox');
+        $('.tg td img').on('click', function() {
+          $('#tm-lightbox-img').attr('src', $(this).attr('src')).attr('alt', $(this).attr('alt'));
+          $lightbox.addClass('active');
+        });
+        $('#tm-lightbox-close, #tm-lightbox').on('click', function(e) {
+          if (e.target === this) { $lightbox.removeClass('active'); }
+        });
+        $(document).on('keydown', function(e) {
+          if (e.key === 'Escape') { $lightbox.removeClass('active'); }
         });
 
         // Gallery
