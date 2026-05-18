@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-
   </head>
+
   <body>    
-        <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
       <div class="container">
         <div class="tm-next">
             <a href="index.html"><img src="img/logo.png" alt="logo" width="" height="" /></a>
         </div>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars navbar-toggler-icon"></i>
         </button>
@@ -35,7 +34,7 @@
               <a class="nav-link tm-nav-link" href="index.html#shows">Shows</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#archive">Archive</a>
+                <a class="nav-link tm-nav-link" href="press.html">Press</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link tm-nav-link" href="#contact">Contact</a>
@@ -49,59 +48,19 @@
       <div class="container tm-container-archive">
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Archive - Lyrics</h2>
+              <h2 class="tm-text-primary tm-section-title mb-4">Syracuse Post-Standard</h2>
               <p class="mx-auto tm-section-desc">
               </p>
           </div>            
         </div>
         <div class="row">
-            <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
-                                        <div class="grid tm-gallery">
-                      <a href="lyrics.html">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Lyrics & Chords" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Lyrics &amp; Chords</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="recordings.html">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Home Recordings" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Home Recordings</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="artwork.html">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-03.jpg" alt="Artwork" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Artwork</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="press.html">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-04.jpg" alt="Press" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Press</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="https://amputee.band/" target="_blank">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-05.jpg" alt="Amputee" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Amputee</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                </div>                
-            </div>        
-          </div>
+            <div class="col-12 tm-content-box">
+                <p class="text-muted">February 20, 2005</p>
+                <h4>Anonymous - Kieran McGee, Stanton Street Records</h4>
+                <h5 class="mb-4"><em>By Mark Bialczek</em></h5>
+                <p>The music from "Anonymous" should be attracting a crowd for singer-songwriter Kieran McGee. McGee combines a great voice, folk and rock touches and even a slight Irish lilt for a 13-song set that shines all the way through. "Faithless" features a harmonica riff that brings Bob Dylan's early days to mind; "Waiting for a Friend" uses that same instrument in a sound that's fresh from Bruce Springsteen's rolling guy-in-a-car stories. That's good company. "Odessa" brings a melancholy country touch, while "The Second Time Around" pulses as a go-for-broke rocker. McGee's only 23, yet he's been honing his unique take on American roots music barely in the national eye since he was 15. It's time for everybody to revel. Catch a show: McGee plays at 9 p.m. Friday at the Mezzanotte Lounge on North Salina Street in Syracuse.</p>
+            </div>
+        </div>
       </div>
     </section>
 
@@ -134,18 +93,16 @@
                 </div>
             </div>
             
-            
         </div><!-- row ending -->
         
       </div>
 
-      	<footer class="text-center small tm-footer">
+      <footer class="text-center small tm-footer">
           <p class="mb-0">
           Copyright &copy; 2026 Kieran McGee 
           </p>
           <p><a href="https://kmcgee.bandcamp.com/">Bandcamp</a></p>
         </footer>
-
 
     </section>
     
@@ -153,23 +110,14 @@
     <script src="slick/slick.min.js"></script>
     <script src="js/easing.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
     <script>
-
       function getOffSet(){
         var _offset = 450;
         var windowHeight = window.innerHeight;
-
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
-
+        if(windowHeight > 500) { _offset = 400; } 
+        if(windowHeight > 680) { _offset = 300; }
+        if(windowHeight > 830) { _offset = 210; }
         return _offset;
       }
 
@@ -180,19 +128,14 @@
         $object.css({"background-position" : bg_css });
       }
 
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
       var background_image_parallax = function($object, multiplier, forceSet){
         multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
         multiplier = 1 - multiplier;
         var $doc = $(document);
-
         if(forceSet) {
           setParallaxPosition($doc, multiplier, $object);
         } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
+          $(window).scroll(function(){ setParallaxPosition($doc, multiplier, $object); });
         }
       };
 
@@ -201,15 +144,12 @@
         multiplier = 1 - multiplier;
         var $doc = $(document);
         $object.css({"background-attachment" : "fixed"});
-        
         $(window).scroll(function(){
           if($(window).width() > 768) {
             var firstTop = $object.offset().top,
                 pos = $(window).scrollTop(),
-                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
-
+                yPos = Math.round((multiplier * (firstTop - pos)) - 186);
             var bg_css = 'center ' + yPos + 'px';
-
             $object.css({"background-position" : bg_css });
           } else {
             $object.css({"background-position" : "center" });
@@ -218,115 +158,35 @@
       };
       
       $(function(){
-        // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.30, false);
         background_image_parallax_2($("#contact"), 0.80);   
-        
-        // Handle window resize
         window.addEventListener('resize', function(){
           background_image_parallax($(".tm-parallax"), 0.30, true);
         }, true);
-
-        // Detect window scroll and update navbar
         $(window).scroll(function(e){          
           if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
+            $(".tm-navbar").addClass("scroll");
           } else {
-            $('.tm-navbar').removeClass("scroll");
+            $(".tm-navbar").removeClass("scroll");
           }
         });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
-
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-          'easing': 'easeInOutExpo',
-          'speed': 600
+        $("#tmNav a").on("click", function(){
+          $(".navbar-collapse").removeClass("show"); 
+        });
+        $("#tmNav").singlePageNav({
+          "easing": "easeInOutExpo",
+          "speed": 600
         });        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
+        $("a").on("click", function(event) {
           if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
-
-            $('html, body').animate({
+            $("html, body").animate({
               scrollTop: $(hash).offset().top
-            }, 600, 'easeInOutExpo', function(){
+            }, 600, "easeInOutExpo", function(){
               window.location.hash = hash;
             });
-          } // End if
-        });
-
-        $('.tm-testimonials-carousel').slick({
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2
-              }
-            }, 
-            {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1
-              }                 
-            }
-          ]
-        });
-
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: false,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
           }
-        ]
         });
       });
     </script>
