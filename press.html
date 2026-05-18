@@ -46,8 +46,8 @@
       </div>
     </nav>
 
-<section id="gallery" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
+<section id="archive" class="tm-section-pad-top">
+      <div class="container tm-container-archive">
         <div class="row">
           <div class="text-center col-12">
               <h2 class="tm-text-primary tm-section-title mb-4">Archive - Press</h2>
@@ -92,38 +92,6 @@
                           </figcaption>
                         </figure>
                       </a>
-                    <!--   <a href="img/gallery-img-05.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-05.jpg" alt="Image 5" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Workstation</span> Offices</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-06.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-06.jpg" alt="Image 6" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Just Above <span>The City</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 7" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Another <span>Exercise Time</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 8" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Repeated <span>Image Spot</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a> -->
                     </div>
                 </div>                
             </div>        
@@ -140,9 +108,6 @@
             
             <div class="text-center col-12">
                 <h2 class="tm-section-title mb-4">Contact</h2>
-                <p class="mb-5">
-                  <!--Proin enim orci, tincidunt quis suscipit in, placerat nec est. Vestibulum posuere faucibus posuere. Quisque aliquam velit eget leo blandit egestas. Nulla id posuere felis, quis tristique nulla.-->
-                </p><br>
             </div>
             
             <div class="col-sm-12 col-md-6">
@@ -161,10 +126,6 @@
                       <span class="mb-0">rise14@gmail.com</span>
                   </a>              
                 </div>
-              
-                
-                <div class="contact-item">&nbsp;</div>
-            
             </div>
             
             
@@ -174,7 +135,7 @@
 
       	<footer class="text-center small tm-footer">
           <p class="mb-0">
-          Copyright &copy; 2023 Kieran McGee 
+          Copyright &copy; 2026 Kieran McGee 
           </p>
           <p><a href="https://kmcgee.bandcamp.com/">Bandcamp</a></p>
         </footer>
@@ -187,8 +148,7 @@
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/easing.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@{{5.3.2}}/dist/amplitude.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
 
       function getOffSet(){
@@ -221,7 +181,6 @@
         multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
         multiplier = 1 - multiplier;
         var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
 
         if(forceSet) {
           setParallaxPosition($doc, multiplier, $object);
@@ -257,7 +216,6 @@
         // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.30, false);
         background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
         
         // Handle window resize
         window.addEventListener('resize', function(){
