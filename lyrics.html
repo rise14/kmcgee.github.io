@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
 
@@ -152,7 +151,6 @@
     
     <script src="js/jquery-1.9.1.min.js"></script>     
     <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/easing.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
     <script src="js/bootstrap.min.js"></script> 
@@ -264,13 +262,6 @@
           } // End if
         });
 
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
-
         $('.tm-testimonials-carousel').slick({
           dots: true,
           prevArrow: false,
@@ -302,7 +293,7 @@
 
         // Gallery
         $('.tm-gallery').slick({
-          dots: true,
+          dots: false,
           infinite: false,
           slidesToShow: 5,
           slidesToScroll: 2,
