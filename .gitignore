@@ -1,0 +1,83 @@
+# -------------------------
+# macOS
+# -------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# -------------------------
+# Windows
+# -------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# -------------------------
+# Linux
+# -------------------------
+*~
+.nfs*
+
+# -------------------------
+# Editors & IDEs
+# -------------------------
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# -------------------------
+# Node / npm (if ever used)
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.env
+.env.local
+
+# -------------------------
+# Build output
+# -------------------------
+dist/
+build/
+out/
+.cache/
+
+# -------------------------
+# Logs & temp files
+# -------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# -------------------------
+# MAMP / local server
+# -------------------------
+.htaccess.bak
+.DS_Store

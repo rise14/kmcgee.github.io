@@ -81,13 +81,13 @@ blockquote {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  background-color: #000;
   transition: all 0.3s ease;
 }
 
 .tm-navbar.scroll {
-  background-color: white;
-  border-bottom: 1px solid #e9ecef;
+  background-color: #000;
+  border-bottom: 1px solid #333;
 }
 
 .navbar-brand {
@@ -102,7 +102,7 @@ blockquote {
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #369;
+  color: #fff;
 }
 
 .nav-item {
@@ -114,7 +114,7 @@ blockquote {
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #369;
+  color: #fff;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
@@ -152,6 +152,8 @@ blockquote {
   height: 100vh;
   min-height: 375px;
   position: relative;
+  padding-top: 70px;
+  box-sizing: border-box;
 }
 
 @media (min-height: 600px) and (min-width: 1920px) {
@@ -267,8 +269,8 @@ blockquote {
 	padding: 20px 0 30px 0;
 }
 
-/* Testimonials */
-#testimonials {
+/* Shows */
+#shows {
   color: white;
   background-image: url(../img/infinite-loop-02.jpg);
   background-size: cover;
@@ -507,7 +509,7 @@ figure.effect-honey:hover h2 i {
   transform: translate3d(0, 0, 0);
 }
 
-.tm-container-gallery {
+.tm-container-archive {
 	padding-top: 30px;
 	}
 
@@ -633,7 +635,7 @@ p {
     max-width: 1275px;
   }
 
-  .tm-container-gallery {
+  .tm-container-archive {
     max-width: 1290px;
   }
 
@@ -671,13 +673,13 @@ p {
   }
 
   .navbar-collapse {
-    background-color: rgb(255, 255, 255);
+    background-color: #000;
     padding: 10px;
     border-radius: 3px;
   }
 
   .navbar-collapse .nav-link {
-    color: #707070;
+    color: #fff;
 	padding-right: 20px;
   }
 }

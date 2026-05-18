@@ -14,41 +14,41 @@
 
   </head>
   <body>
-      <div style:"border-color:black"; "border-style:solid"; border-width:100px";>  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+      <a id="home"></a>
+      <div class="container">
+        <div class="tm-next">
+            <a href="index.html"><img src="img/logo.png" alt="logo" width="" height="" /></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#releases">Releases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#shows">Shows</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#archive">Archive</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="index.html"><img src="img/logo.png" alt="logo" width="" height="" /></a>
-          </div>             
-            
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#infinite">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#whatwedo">Releases</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#testimonials">Shows</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#gallery">Archive</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
-              </li>                    
-            </ul>
-          </div>        
-        </div>
-      </nav>
-      
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
         </div>        
@@ -61,7 +61,7 @@
       </div>      
     </section>
 
-    <section id="whatwedo" class="tm-section-pad-top">
+    <section id="releases" class="tm-section-pad-top">
       
       <div class="container">
 
@@ -134,7 +134,7 @@
       
     </section>
     
-    <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
+    <section id="shows" class="tm-section-pad-top tm-parallax-2">      
       <div class="container tm-testimonials-content">
         <div class="row">
           <div class="col-lg-12 tm-content-box">
@@ -153,8 +153,8 @@
       <div class="tm-bg-overlay"></div>
     </section>
     
-    <section id="gallery" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
+    <section id="archive" class="tm-section-pad-top">
+      <div class="container tm-container-archive">
         <div class="row">
           <div class="text-center col-12">
               <h2 class="tm-text-primary tm-section-title mb-4">Archive</h2>
@@ -261,7 +261,7 @@
 
       	<footer class="text-center small tm-footer">
           <p class="mb-0">
-          Copyright &copy; 2023 Kieran McGee 
+          Copyright &copy; 2026 Kieran McGee 
           </p>
         </footer>
 
@@ -341,7 +341,7 @@
         // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.30, false);
         background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
+        background_image_parallax_2($("#shows"), 0.80);
         
         // Handle window resize
         window.addEventListener('resize', function(){
