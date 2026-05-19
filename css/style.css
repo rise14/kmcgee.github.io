@@ -616,3 +616,112 @@ p {
     margin: 0;
   }
 }
+
+/* =====================
+   MOBILE RESPONSIVE FIXES
+   ===================== */
+
+/* Bandcamp embeds — fluid width */
+.bandcamp-embed {
+  border: 0;
+  width: 100%;
+  max-width: 350px;
+  height: 470px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Releases section — flexbox replacing Bootstrap cols */
+.tm-releases-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0 40px;
+}
+
+.tm-release-item {
+  flex: 0 1 370px;
+  min-width: 0;
+  text-align: center;
+}
+
+/* Archive section — flexbox replacing table */
+.tm-archive-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.tm-archive-item {
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.tm-archive-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Artwork paintings — flexbox replacing table */
+.tm-paintings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.tm-painting-item img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  cursor: zoom-in;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .tm-painting-item img {
+    width: calc(50vw - 22px);
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+}
+
+/* Lyrics modal — responsive padding */
+#lyrics-modal-inner {
+  background: #fff;
+  color: #000;
+  max-width: 640px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  font-family: Georgia, serif;
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+@media (min-width: 520px) {
+  #lyrics-modal-inner {
+    padding: 40px 48px;
+  }
+}
+
+/* Hero image — cover on narrow mobile */
+@media (max-width: 600px) {
+  #infinite {
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+/* Contact section — let content set height on mobile */
+@media (max-width: 767px) {
+  #contact {
+    min-height: auto;
+    padding-bottom: 80px;
+  }
+}
