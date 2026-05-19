@@ -1,0 +1,49 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Strangers\
+
+\f1\b0 \
+Said I met a stranger last Thursday\
+But you don\'92t believe a word that I say\
+Took a long time but now I\'92m willing\
+To face the things I try so hard to hide\
+\
+	Don\'92t be blind\
+	We both will find a place\
+	Don\'92t ask why or try to save your face\
+	\'91Cause we\'92re strangers anyway\
+\
+Walking uptown and I am looking\
+For any selfish thing that I can find\
+Walking uptown and I am looking\
+To see you for the very last time\
+\
+	On the stairs by the bridge we meet\
+	If your heart breaks I won\'92t even blink\
+	\'91Cause we\'92re strangers, so you say\
+\
+This is the right time\
+This is the right time\
+This is the right time\
+And you know it\'92s all the same\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 This is the right time\
+This is the right time\
+This is the right time\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \'91Cause something\'92s gotta change\
+\
+Said I met a stranger last Thursday\
+But you don\'92t believe a thing that I say\
+Took a long time but now I\'92m ready\
+To face the things I try so hard to hide\
+\
+	Don\'92t listen to a word they say\
+	We can do the things we wan\'92t to\
+	There\'92s just people in the way\
+}

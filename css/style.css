@@ -39,10 +39,6 @@ a:focus {
   background-color: #ced4da;
 }
 
-blockquote {
-  font-size: 0.86em;
-  line-height: 1.8em;
-}
 
 .tm-section-pad-top {
   padding-top: 80px;
@@ -174,41 +170,11 @@ blockquote {
 }
 
 
-.tm-intro-next {
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  right: 0;
-}
 
 @media (max-height: 480px) {
   .tm-hero-text-container-inner {
     margin-top: -40px;
   }
-
-  .tm-intro-next {
-    bottom: 20px;
-  }
-}
-
-.tm-down-arrow-link {
-  display: block;
-  margin-top: 18%;
-}
-
-.tm-down-arrow {
-  	color: #FFF;
-    cursor: pointer;
-    background: #357;
-    padding: 15px 40px;
-    transition: all 0.3s ease;
-}
-
-.tm-down-arrow:hover,
-.tm-down-arrow:focus {
-  color: #FFF;
-  background: #37A;
-  padding: 20px 50px;
 }
 
 
@@ -220,11 +186,6 @@ blockquote {
 
 .tm-intro-text {
   font-size: 1.2rem;
-}
-
-.tm-icon {
-  display: block;
-  color: #37A;
 }
 
 

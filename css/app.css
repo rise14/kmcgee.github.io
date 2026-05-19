@@ -320,7 +320,6 @@ div#progress-container {
     background: #00adfb; }
 
 div#control-container {
-  margin-top: 25px;
   margin-top: 20px; }
   div#control-container div#repeat-container {
     width: 25%;
@@ -623,11 +622,7 @@ div.amplitude-wave-form{
    width: 100%;
 }
 
-div#large-visualization{
-    width: 100%;
-    background-color: black;
-    visibility: hidden;
-  }
+
 /*
   4. Pages
 */
